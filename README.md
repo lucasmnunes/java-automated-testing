@@ -1,2 +1,2 @@
 # java-automated-testing
-Project to implement experiments with automated tests using Java.
+Project to perform experiments with automated tests using Java.

@@ -3,14 +3,17 @@ package automated.testing.service;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.MockitoAnnotations;
 
 public class HelloServiceTest {
 
+    @InjectMocks
     HelloService service;
 
     @BeforeEach
     public void setup() {
-        this.service =  new HelloService();
+        MockitoAnnotations.initMocks(this);
     }
 
     @Test
